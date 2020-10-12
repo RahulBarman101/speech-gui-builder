@@ -1,4 +1,5 @@
 import speech_recognition as sr
+from ui import MyApp
 
 r = sr.Recognizer()
 
@@ -14,4 +15,7 @@ def talk_and_recognize():
     
     return query
 
-# print(talk_and_recognize())
+q = talk_and_recognize()
+app = MyApp()
+app.showText(q)
+app.run()
