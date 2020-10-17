@@ -30,10 +30,7 @@ for i in WIDGETS:
         wid = i
         break
 
-if wid:
-    app.make('button')
-else:
-    app.make('text',q)
+app.make(wid,q)
 
 app.run()
 
